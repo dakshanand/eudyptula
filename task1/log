@@ -1,0 +1,23 @@
+Script started on Wednesday 25 January 2017 01:51:17 PM IST
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ sud[K[K[Kls
+hello.c  log  Makefile
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ sudo make
+[sudo] password for daksh: 
+make -C /lib/modules/4.9.0-040900-generic/build M=/home/daksh/eudyptula/task1 modules
+make[1]: Entering directory '/usr/src/linux-headers-4.9.0-040900-generic'
+  CC [M]  /home/daksh/eudyptula/task1/hello.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/daksh/eudyptula/task1/hello.mod.o
+  LD [M]  /home/daksh/eudyptula/task1/hello.ko
+make[1]: Leaving directory '/usr/src/linux-headers-4.9.0-040900-generic'
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ sudo insmod hello.ko
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ dmesg | tail -1
+[ 4637.240829] Hello world!
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ sudo rmmod hello
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ sudo rmmod hello[1Pdmesg | tail -1
+[ 4649.901827] Cleaning up module.
+]0;daksh@daksh-Inspiron-7559: ~/eudyptula/task1[01;32mdaksh@daksh-Inspiron-7559[00m:[01;34m~/eudyptula/task1[00m$ exiu[Kt
+exit
+
+Script done on Wednesday 25 January 2017 01:51:58 PM IST

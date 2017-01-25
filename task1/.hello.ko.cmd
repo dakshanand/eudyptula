@@ -1,0 +1,1 @@
+cmd_/home/daksh/eudyptula/task1/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/daksh/eudyptula/task1/hello.ko /home/daksh/eudyptula/task1/hello.o /home/daksh/eudyptula/task1/hello.mod.o ;  true

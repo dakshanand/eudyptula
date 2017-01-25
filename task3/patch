@@ -1,0 +1,14 @@
+diff --git a/Makefile b/Makefile
+index 0988400..1d945c0 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ VERSION = 4
+ PATCHLEVEL = 10
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc5
++EXTRAVERSION = -eudyptula
+ NAME = Anniversary Edition
+ 
+ # *DOCUMENTATION*
+
